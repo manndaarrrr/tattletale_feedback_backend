@@ -1,0 +1,10 @@
+DirectoryIndex index.html
+
+# Optional pretty URL handling
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^about-lana$ /about-lana/ [R=301,L]
+RewriteRule ^community-survey$ /community-survey/ [R=301,L]
+RewriteRule ^turtle-tales-story$ /turtle-tales-story/ [R=301,L]
+RewriteRule ^workshop-chapters$ /workshop-chapters/ [R=301,L]
